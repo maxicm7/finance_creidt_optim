@@ -141,7 +141,7 @@ st.sidebar.header("Objetivo y Restricciones")
 cuota_maxima_pagar = st.sidebar.number_input(
     "Cuota Máxima que Puedo Pagar ($)", 
     min_value=1000, 
-    value=500000, 
+    value=5000000, 
     step=1000,
     format="%d"
 )
@@ -149,7 +149,7 @@ cuota_maxima_pagar = st.sidebar.number_input(
 rango_cuotas = st.sidebar.slider(
     "Rango de Cuotas a Evaluar", 
     min_value=1, 
-    max_value=120, 
+    max_value=360, 
     value=(12, 48)
 )
 
