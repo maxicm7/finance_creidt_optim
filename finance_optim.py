@@ -104,8 +104,8 @@ st.sidebar.header("Parámetros de Entrada")
 monto_prestamo = st.sidebar.number_input(
     "Monto a Solicitar ($)", 
     min_value=1000, 
-    max_value=100000000, 
-    value=500000, 
+    max_value=500000000, 
+    value=5000000, 
     step=10000,
     format="%d"
 )
@@ -115,14 +115,14 @@ tna_pct = st.sidebar.slider(
     min_value=0.0, 
     max_value=200.0, 
     value=85.0, 
-    step=0.5
+    step=0.1
 )
 tna = tna_pct / 100.0
 
 gastos_admin_fijos = st.sidebar.number_input(
     "Gastos Administrativos Fijos por Cuota ($)", 
     min_value=0, 
-    value=1500, 
+    value=15000000, 
     step=100
 )
 
@@ -141,7 +141,7 @@ st.sidebar.header("Objetivo y Restricciones")
 cuota_maxima_pagar = st.sidebar.number_input(
     "Cuota Máxima que Puedo Pagar ($)", 
     min_value=1000, 
-    value=50000, 
+    value=500000, 
     step=1000,
     format="%d"
 )
